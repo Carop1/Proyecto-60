@@ -48,19 +48,22 @@ nav ul{
     grid-column: 1;
     grid-row: 1;
 }
+.fotos-pequeñas{
+    width: 200px;
+    height: 900px;
+}
 .principal{
     display: grid;
-    grid-template-rows: ;
     grid-template-columns: 1fr 2fr 2fr;
     border: 2px solid;
 
 }
 .contenedor2{
-    width: 400px;
-    height: 300px;
+    width: 700px;
+    height: 500px;
     border: 2px solid; 
 }
 .fotoinicial{
-    width: 400px;
-    height: 300px;
+    width: 700px;
+    height: 500px;
 }
