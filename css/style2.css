@@ -51,6 +51,7 @@ nav ul{
 .fotos-pequeñas{
     width: 200px;
     height: 900px;
+    padding: 50px;
 }
 .principal{
     display: grid;
@@ -62,6 +63,9 @@ nav ul{
     width: 700px;
     height: 500px;
     border: 2px solid; 
+}
+.contenedor2:hover{
+    height: 500px;
 }
 .fotoinicial{
     width: 700px;
