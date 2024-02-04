@@ -4,14 +4,17 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     
 }
+body::-webkit-scrollbar {
+    width: 20px;               /* width of the entire scrollbar */
+  }
 .container{
     display: grid;
     height: auto;
     width: 90%;
     margin: 0 auto;
-    /* border: 2px  solid;
-    border-color: black;  */
-    grid-template-rows: 70px 800px 500px 200px;
+    border: 2px  solid;
+    border-color: black; 
+    grid-template-rows: 70px 750px 800px 800px 800px 200px;
     position: relative;
 }
 header{
@@ -21,6 +24,8 @@ header{
     grid-column: 1;
     grid-row: 1;
     background-color:#F2163E;
+    padding: 15px 0px 0px 0px;
+    
     
 }
 nav{
@@ -33,6 +38,7 @@ nav ul{
     justify-content: space-around;
     list-style: none;
     padding: 10px 0px;
+    text-align: center;
     
 }
 .cont nav ul li a{
@@ -61,6 +67,7 @@ nav ul{
     width: 95%;
     height: 650px;
     padding: 30px;
+    margin-top: 15px;
     justify-content: space-around;
 
 }
@@ -113,7 +120,7 @@ nav ul{
     position: relative;
     width: 550px;
     height: 500px;
-    top:75px;
+    top:80px;
     left:240px;
     }
 .foto-peque1:hover{
@@ -150,8 +157,8 @@ nav ul{
     position: relative;
     width: 550px;
     height: 500px;
-    top:-262px;
-    left:250px;
+    top:-250px;
+    left:240px;
 }
 .foto-peque3:hover{
     width: 500px;
@@ -168,8 +175,8 @@ nav ul{
     position: relative;
     width: 550px;
     height: 500px;
-    top:-413px;
-    left:250px;
+    top:-427px;
+    left:240px;
     
 }
 .foto-peque4:hover{
@@ -230,6 +237,21 @@ h3{
 }
 @media(max-width:770px){
 
+    .principal{
+        
+        border: 2px solid;
+        border-color: #F2163E;
+        width: 100%;
+        height: 400px;
+        padding: 30px 0px;
+        margin-top: 15px;
+        justify-content: space-around;
+        position: relative;
+        overflow: auto;
+    }
+    .container{
+        width: auto;
+    }
     .checkbtn{
       
         display: block;
@@ -247,12 +269,13 @@ h3{
     }
     nav ul{
         position: relative;
-        width: 395px;
+        width: 366px;
         height: 300px;
         background: coral;
         top: 0px;
         left: -150%;
         display: block;
+        z-index: 1;
         /* display:none; */
         text-align: center;
         transition: all 0.5s;
@@ -293,12 +316,15 @@ h3{
     }
     .principal{
         display: grid;
-        width: 75%;
+        width: 92%;
         height: 750px;
         grid-template-columns: 50px 1fr;
     }
+    .container{
+        width: 92%;
+    }
     header{
-        width: 90%;
+        width: 92%;
     }
     /* scroll __________________________________*/
     scroll-container {
@@ -320,7 +346,7 @@ h3{
     .foto-peque3,.foto-peque4{
         width: 40px;
         height: 40px;
-        padding: 0;
+        padding: 0px 0px 0px 30px;
         margin: 0;
     }
    
@@ -358,20 +384,22 @@ h3{
         position: relative;
         width: 250px;
         height: 300px;
-        top:-155px;
-        left:90px;
+        top:-170px;
+        left:85px;
         }
     .descripcion-pro{
         padding-top: 10%;
         grid-column-start: 1;
         grid-column-end: 3;
+        padding: 0px 0px 0px 20px;
+
     }
     .pequeñas-1{
         width: 80px;
         height: 50px;
     }
     p{
-        width: 340px;
+        width: 320px;
     }
     .fotos-pequeñas{
         width: 20%;
@@ -380,7 +408,5 @@ h3{
         position: relative;
         top:8px;
     }
-    .container{
-        width: 330px;
-    }
+    
 }
