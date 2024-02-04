@@ -4,8 +4,11 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     
 }
-body::-webkit-scrollbar {
-    width: 20px;               /* width of the entire scrollbar */
+.container::-webkit-scrollbar {
+    width: 10px;               /* width of the entire scrollbar */
+  }
+  .container::-webkit-scrollbar {
+    background: #F2163E;
   }
 .container{
     display: grid;
@@ -134,7 +137,7 @@ nav ul{
     transition: opacity 0.5s ease;
 }
 .cont-foto2:hover .foto-peque2{
-    background-image: url('/../images/foto2.png');
+    /* background-image: url('/../images/foto2.png'); */
     position: relative;
     width: 550px;
     height: 500px;
@@ -153,7 +156,7 @@ nav ul{
     transition: opacity 0.5s ease;
 }
 .cont-foto3:hover .foto-peque3{
-    background-image: url('/../images/foto3.png');
+    /* background-image: url('/../images/foto3.png'); */
     position: relative;
     width: 550px;
     height: 500px;
@@ -171,7 +174,7 @@ nav ul{
     transition: opacity 0.5s ease;
 }
 .cont-foto4:hover .foto-peque4 {
-    background-image: url('/../images/foto4.png');
+    /* background-image: url('/../images/foto4.png'); */
     position: relative;
     width: 550px;
     height: 500px;
@@ -187,6 +190,7 @@ nav ul{
 .pequeñas-1{
     width: 100px;
     height: 80px;
+    padding: 5px;
 }
 .descripcion-pro{
     width: 100%;
@@ -196,7 +200,8 @@ nav ul{
 }
 .mini{
     display: flex;
-    margin: 0px 30px 0px 30px;
+    margin: 0px 30px 0px 0px;
+    padding: 0;
 }
 .grande{
     /* border: 1px solid; */
@@ -269,11 +274,12 @@ h3{
     }
     nav ul{
         position: relative;
-        width: 366px;
+        width: 350;
         height: 300px;
         background: coral;
+        
         top: 0px;
-        left: -150%;
+        left: -120%;
         display: block;
         z-index: 1;
         /* display:none; */
@@ -355,37 +361,37 @@ h3{
         height: 300px;
     }
     .cont-foto1:hover .foto-peque1{
-        background-image: url('/../images/foto1.png');
+        /* background-image: url('/../images/foto1.png'); */
         position: relative;
         width: 250px;
         height: 300px;
         top:10px;
-        left:90px;
+        left:100px;
         }
 
     .cont-foto2:hover .foto-peque2{
-        background-image: url('/../images/foto2.png');
+        /* background-image: url('/../images/foto2.png'); */
         position: relative;
         width: 250px;
         height: 300px;
         top:-50px;
-        left:90px;
+        left:60px;
         }
     .cont-foto3:hover .foto-peque3{
-        background-image: url('/../images/foto3.png');
+        /* background-image: url('/../images/foto3.png'); */
         position: relative;
         width: 250px;
         height: 300px;
         top:-110px;
-        left:80px;
+        left:60px;
         }
     .cont-foto4:hover .foto-peque4{
-        background-image: url('/../images/foto4.png');
+        /* background-image: url('/../images/foto4.png'); */
         position: relative;
         width: 250px;
         height: 300px;
         top:-170px;
-        left:85px;
+        left:60px;
         }
     .descripcion-pro{
         padding-top: 10%;
