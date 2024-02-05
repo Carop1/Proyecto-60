@@ -4,6 +4,9 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     
 }
+body{
+
+}
 .container::-webkit-scrollbar {
     width: 10px;               /* width of the entire scrollbar */
   }
@@ -13,9 +16,9 @@
 .container{
     display: grid;
     height: auto;
-    width: 90%;
+    width: 100vw;
     margin: 0 auto;
-    border: 2px  solid;
+    /* border: 2px  solid; */
     border-color: black; 
     grid-template-rows: 70px 750px 800px 800px 800px 200px;
     position: relative;
@@ -56,7 +59,7 @@ nav ul{
     width: 200px; 
     height: 150px;
     display: block;
-    border: 2px solid;
+    /* border: 2px solid; */
     
 }
 .fotos-pequeñas{
@@ -65,8 +68,6 @@ nav ul{
 
 .principal{
     display: inline-flex;
-    /* grid-template-rows: 3fr 2fr; */
-    border: 2px solid;
     width: 95%;
     height: 650px;
     padding: 30px;
@@ -85,25 +86,19 @@ nav ul{
     display: grid;
     width: 200px; 
     height: 150px;
-    
-    /* border: 2px solid; */
-    
+           
 }
 .foto-peque3{
     display: grid;
     width: 200px; 
     height: 150px;
-    
-    /* border: 2px solid; */
-    
+         
 }
 .foto-peque4{
     display: grid;
     width: 200px; 
     height: 150px;
-    
-    /* border: 2px solid; */
-    
+  
 }
 
 .foto-grande{
@@ -132,7 +127,6 @@ nav ul{
 }
 .cont-foto2{
     height: 150px;
-    /* border: 1px solid; */
     width: 200px;
     transition: opacity 0.5s ease;
 }
@@ -151,7 +145,6 @@ nav ul{
 }
 .cont-foto3{
     height: 150px;
-    /* border: 1px solid; */
     width: 200px;
     transition: opacity 0.5s ease;
 }
@@ -169,7 +162,6 @@ nav ul{
 }
 .cont-foto4{
     height: 150px;
-    /* border: 1px solid; */
     width: 200px;
     transition: opacity 0.5s ease;
 }
@@ -195,7 +187,6 @@ nav ul{
 .descripcion-pro{
     width: 100%;
     height: 400px;
-    /* border: 1px solid; */
     padding: 100px 0px;
 }
 .mini{
@@ -204,8 +195,6 @@ nav ul{
     padding: 0;
 }
 .grande{
-    /* border: 1px solid; */
-
     padding:0px 40px;
 }
 h2{
@@ -227,11 +216,11 @@ h3{
 }
 
 .menu{
-    width: 100px;
+    width: 70px;
     float: right;
-    line-height: 70px;
-    margin: 10px 15px;
-    /* display: none; */
+    line-height: 40px;
+    margin: 0px 0px;
+    
 }
 #check{
     display: none;
@@ -244,27 +233,30 @@ h3{
 
     .principal{
         
-        border: 2px solid;
-        border-color: #F2163E;
-        width: 100%;
-        height: 400px;
-        padding: 30px 0px;
-        margin-top: 15px;
+        width: 350px;
+        height: 600px;
         justify-content: space-around;
         position: relative;
         overflow: auto;
     }
+    .grande{
+        width: 250px;
+        height: 300px;
+        padding: 0px 0px 0px 30px;
+    }
     .container{
-        width: auto;
+        position: relative;
+        width: 90%;
     }
     .checkbtn{
       
         display: block;
+        
     }
     .menu{
         display: block;
         font-size: 70px;
-        margin: auto 0px;
+        margin: 0 auto;
         cursor: pointer;
         
     }
@@ -277,12 +269,10 @@ h3{
         width: 350;
         height: 300px;
         background: coral;
-        
-        top: 0px;
-        left: -120%;
+        top: 23px;
+        left: -160%;
         display: block;
         z-index: 1;
-        /* display:none; */
         text-align: center;
         transition: all 0.5s;
         overflow-y: scroll;
@@ -320,17 +310,15 @@ h3{
     #check:checked ~ ul{
         left:0;
     }
-    .principal{
-        display: grid;
-        width: 92%;
-        height: 750px;
-        grid-template-columns: 50px 1fr;
-    }
+    /* ___________________________ */
+    
     .container{
-        width: 92%;
+        width: 350px;
+        margin: 0 auto;
+        position: relative;
     }
     header{
-        width: 92%;
+        width: 350px;
     }
     /* scroll __________________________________*/
     scroll-container {
@@ -366,7 +354,7 @@ h3{
         width: 250px;
         height: 300px;
         top:10px;
-        left:100px;
+        left:85px;
         }
 
     .cont-foto2:hover .foto-peque2{
@@ -397,12 +385,13 @@ h3{
         padding-top: 10%;
         grid-column-start: 1;
         grid-column-end: 3;
-        padding: 0px 0px 0px 20px;
+        padding: 0px;
+        text-align: justify;
 
     }
     .pequeñas-1{
-        width: 80px;
-        height: 50px;
+        width: 70px;
+        height: 40px;
     }
     p{
         width: 320px;
@@ -413,6 +402,9 @@ h3{
     .foto-grande{
         position: relative;
         top:8px;
+    }
+    h2{
+        text-align: left;
     }
     
 }
